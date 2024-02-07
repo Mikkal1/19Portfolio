@@ -1,0 +1,149 @@
+header {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+nav {
+    background-color: #242424;
+    color: #fff;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-name {
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 100%;
+    left: 0;
+    background-color: #F04C4B;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+    visibility: visible;
+    bottom: 0;
+}
+
+.nav-link.active {
+    color: #F04C4B;
+    border-bottom: #F04C4B 2px solid;
+}
+
+section {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero {
+    background-color: #242424;
+    color: #fff;
+    padding: 50px 20px;
+    margin: 0;
+}
+
+.highlight {
+    color: #F04C4B;
+}
+
+.section-image img {
+    float: left;
+    height: 300px;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.section-image p {
+    font-size: 18pt;
+    margin-bottom: 50px;
+    width: 50%;
+    display: inline-block;
+}
+
+.contactForm {
+    width: 100%;
+}
+
+.contactForm input, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.contactForm label {
+    margin-top: 20px;
+    display: block;
+}
+
+.contactForm button {
+    background-color: #F04C4B;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+}
+
+.card {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.error {
+    color: #F04C4B;
+    font-size: 14px;
+    padding: 20px 0;
+}
+
+.iconButton {
+    color: #F04C4B;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+footer {
+    text-align: center;
+    margin-top: 300px;
+    background-color: #242424;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .icon {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    padding: 5px 5px;
+}
+
+footer .icon:hover {
+    color: #F04C4B;
+    transition: all 0.3s ease-in-out;
+}
